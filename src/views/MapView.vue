@@ -101,7 +101,7 @@ export default {
     async loadSomeGeoJson() {
       const nextIndex = this.layerData.length;
 
-      const response = await fetch("/TAPAL_BATAS_FeaturesToJSON.json");
+      const response = await fetch("/Landuse_Desa_CihideungIlir_F.json");
       const data = await response.json();
 
       console.log(data);
@@ -152,7 +152,7 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch("/Landuse_Desa_CihideungIlir_F.json");
+    const response = await fetch("/TAPAL_BATAS_FeaturesToJSON.json");
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
