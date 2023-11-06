@@ -152,7 +152,7 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch("/TAPAL_BATAS_FeaturesToJSON.json");
+    const response = await fetch("/CIHIDEUNGHILIR_BATAS_DESA_Fe.json");
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
