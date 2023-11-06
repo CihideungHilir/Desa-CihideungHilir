@@ -101,7 +101,7 @@ export default {
     async loadSomeGeoJson() {
       const nextIndex = this.layerData.length;
 
-      const response = await fetch("//CIHIDEUNGHILIR_BATAS_DESA_Fe.json");
+      const response = await fetch("/CIHIDEUNGHILIR_BATAS_DESA_Fe.json");
       const data = await response.json();
 
       console.log(data);
