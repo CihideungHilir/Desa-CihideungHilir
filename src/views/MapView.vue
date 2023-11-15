@@ -152,7 +152,7 @@ export default {
   },
   async created() {
     this.loading = true;
-    const response = await fetch("/Batas_RW_Desa_Cihideung_Ilir.json");
+    const response = await fetch("/Landuse_Desa_CihideungIlir_F.json");
     const data = await response.json();
     this.geojson = data;
     this.loading = false;
